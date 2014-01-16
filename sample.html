@@ -1,0 +1,339 @@
+<!-- views/index.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Revealer - Reveal.js multiplexer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <section>
+                    <h2>Guessing Game<h2>
+                    <h3>?????????????</h3>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/4square.jpg">
+                    </a>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/9gag.jpg">
+                    </a>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/evernote.png">
+                    </a>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/fb.jpg">
+                    </a>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/flipboard.png">
+                    </a>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/instagram.jpg">
+                    </a>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/line.jpg">
+                    </a>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/path.png">
+                    </a>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/pinterest.png">
+                    </a>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/viber.png">
+                    </a>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/wechat.jpg">
+                    </a>
+                </section>
+
+                <section>
+                    <h2>Discussion (Part 1)</h2>
+                </section>
+
+                <section>
+                    <p>Let's review how a basic Android project looks like</p>
+                </section>
+
+                <section>
+                    <h1>Hands-on</h1>
+                    <h3>Create a new Android project - Archer</h3>
+                </section>                
+
+                <section>
+                    <ul>
+                        <li>Src folder - The source folder</li>
+                        <li>Gen folder - Generated stuff. Don't touch. Managed by ADT.</li>
+                        <li>Bin folder - The compiled stuff. Useless to touch. Managed by ADT.</li>
+                        <li>Lib folder - JAR files are put here</li>
+                        <li>Res folder - Put the application resources here</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>drawables folder - Image files</li>
+                        <li>layout folder - Layout files</li>
+                        <li>menu folder - XML configuration files for menus</li>
+                        <li>values folder - XML configuration files for strings, styles (the CSS version of Android), dimensions, etc</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>The suffix <strong>hdpi</strong>, <strong>ldpi</strong>, <strong>mdpi</strong>, etc. correspond to screen dimensions. Remember that unlike iOS, Android is installed on phones with different screen sizes.</p>
+                </section>
+
+                <section>
+                    <p>AndroidManifest.xml - important configuration file for your Android application</p>                    
+                </section>
+
+                <section>
+                    <p>The basic android building blocks are</p>
+                    <ul>
+                        <li>Activity</li>
+                        <li>Broadcast Receiver</li>
+                        <li>Service</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Let's get our hands busy with Activity</p>                    
+                </section>
+
+                <section>
+                    <h1>Hands-on</h1>
+                    <h3>Android Screens a.k.a. Activities</h3>
+                </section>    
+
+                <section>
+                    <ol>
+                        <li>Create activity:</li>
+                            <p>ArcherActivity.java</p>
+                        <li>Create layout:</li>
+                            <p>archer_activity_layout.xml</p>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Modify AndroidManifest.xml</li>
+                            <p>To make Android aware of your activity</p>
+                            <p>So Android will show ArcherActivity.java on application start</p>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Run your application, and let me see</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <ol>
+                        <li>Create second activity:</li>
+                            <p>TigerActivity.java</p>
+                        <li>Create layout:</li>
+                            <p>tiger_activity_layout.xml</p>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Modify AndroidManifest.xml</li>
+                            <p>To make Android aware of your activity</p>
+                        <li>Link the two activities through the button in the first activity</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Run your application, and let me see</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Activity Lifecycle</h2>                    
+                </section>
+
+                <section>
+                    <h3>Can you multitask on your Android phone?</h3>                    
+                </section>
+
+                <section>
+                    <h3>Can you use your camera while Facebook app is open?</h3>                    
+                </section>
+
+                <section>
+                    <h3>When you tap Facebook from the launcher, a Facebook screen is <STRONG>CREATED</STRONG></h3>                    
+                </section>
+
+                <section>
+                    <h3>When you are using Facebook, and somebody calls, that Facebook screen gets <STRONG>HIDDEN</STRONG></h3>                    
+                </section>
+
+                <section>
+                    <h3>When you are using Facebook and you hit the back button, that Facebook activity gets <STRONG>KILLED</STRONG></h3>           
+                </section>
+
+                <section>
+                    <p>The changing state of an activity is called the Activity Lifecycle.</p>
+                </section>
+
+                <section>
+                    <a class="image" target="_blank">
+                        <img src="img/lifecycle.png">
+                    </a>
+                </section>
+
+                <section>
+                    <p>There are several states, but you are excused to remember only 3 of them:</p>
+                    <ol>
+                        <br/>
+                        <li>onCreate() - when an activity is started</li>
+                        <li>onPause() - when an activity is temporarily hidden behind another screen</li>
+                        <li>onDestroy() - when an activity is killed</li>
+                        <br/>
+                    </ol> 
+                    <p>The states correspond to a <strong>METHOD</strong> on ArcherActivity.java</p>                   
+                </section>
+
+                <section>
+                    <ol>
+                        <li>In ArcherActivity.java, override onCreate() method</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>In ArcherActivity.java, override onPause() method</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>In ArcherActivity.java, override onDestroy() method</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                    </ol>
+                </section>
+
+                <section>
+                    <ol>
+                        <li>Run your application. Observe the logs.</li>
+                        <li>Hit home button. Observe the logs.</li>
+                        <li>Open your application. Observe the logs.</li>
+                        <li>Hit the back button. Observe the logs.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Discussion (Part 2)</h2>
+                </section>
+
+                <section>
+                    <h2>Review:</h2>
+                    <br/>
+                    <p>The basic android building blocks are</p>
+                    <ul>
+                        <li>Activity</li>
+                        <li><h4>Broadcast Receiver</h4></li>
+                        <li><h4>Service</h4></li>
+                    </ul>
+                    <br/>
+                    <p>*Now we will discuss Broadcast Receiver and Service</p>
+                </section>
+
+                <section>
+                    <h1>Hands-on</h1>
+                    <h3>Broadcast Receiver</h3>
+                </section>  
+
+                <section>
+                    <ol>
+                        <li>Create a new project - Eagle</li>
+                        <li>Create a broadcast receiver - EagleReceiver.java</li>
+                        <li>Override onReceive() method</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Register EagleReceiver.java on AndroidManifest</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Run your Eagle app</li>
+                        <br/>
+                    </ol>
+                    <p>Nothing happened because the anticipated event was not broadcasted</p>
+                </section>
+
+                <section>
+                    <ol>
+                        <li>Let's go back to Archer project</li>
+                        <li>Change implementation for button click. It should broadcast an event.</li>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Run your Archer app and hit the button. See what happens</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h1>Hands-on</h1>
+                    <h3>ANR</h3>
+                </section>  
+
+                <section>
+                    <ol>
+                        <li>Go back to Eagle project</li>
+                        <li>Modify EagleReceiver > onReceive(). Add a 3-second delay before the toast</li>
+                        <li>Run it and hit the button. Observe what happens.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <p>ANR - Application Not Responding</p>
+                    <br/>
+                    <p>ANR is thrown because the broadcast receiver took more than 3 seconds to execute.</p>
+                    <br/>
+                    <p>If you are going to run long-running background processes, use a Service</p>
+                </section>
+
+                <section>
+                    <h1>Hands-on</h1>
+                    <h3>Service</h3>
+                </section> 
+
+                <section>
+                    <ol>
+                        <li>Go to Eagle Project</li>
+                        <li>Create a Service - EagleService.java</li>
+                        <li>Override EagleService.java > onStartCommand()</li>
+                            <p>- Execute toast with delay</p>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Modify EagleReceiver.java > onReceive()</li>
+                            <p>- Invoke EagleService</p>
+                            <p>**Copy snippet from Gist.Github</p>
+                        <li>Run the app and see if it succeeds</li>
+                        <br/>
+                    </ol>
+                    <p>Nothing happened because the anticipated event was not broadcasted</p>
+                </section>
+
+                <section>
+                    <h1>Thank you!</h1>
+                    <h3>@carlo_ledesma</h3>
+                </section> 
+
+            </div>
+        </div>
+        <script src="reveal.js/js/reveal.min.js"></script>
+        <script type="text/javascript">
+            Reveal.initialize({history: true});
+        </script>
+    </body>
+</html>
